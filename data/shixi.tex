@@ -1,0 +1,60 @@
+%%============================================================
+%% 中文封面
+\newpage
+\thispagestyle{empty}
+
+\vspace{4cm}
+
+\begin{center}
+\songti\xiaoyi 浙江大学毕业设计  \\
+\songti\xiaoyi 本科学生中期报告
+\end{center}
+
+\vspace{4cm}
+
+\begin{tabbing}
+              \= \songti\sihao 学生姓名：\quad \quad \quad \quad \= \underline{\makebox[8cm]{}} \\[2mm]
+               \> \songti\sihao 实习单位\textbackslash 实验室：\> \underline{\makebox[8cm]{\sihao\zjumentorc}} \\[2mm]
+               \> \songti\sihao 项目名称：\> \underline{\makebox[8cm]{\sihao\zjugrade\hspace{3mm}\zjumajor}} \\[2mm]
+              \> \songti\sihao 导师姓名： \>
+              \underline{\makebox[8cm]{}} \\[2mm]
+              \> \songti\sihao 合作导师姓名：  \>
+              \underline{\makebox[8cm]{}} \\[2mm]
+              \> \songti\sihao 项目开始日期： \>
+              \underline{\makebox[8cm]{}} \\[2mm]
+              \> \songti\sihao 项目结束日期： \>
+              \underline{\makebox[8cm]{}}
+\end{tabbing}
+
+\vspace{1cm}
+\begin{center}
+\songti\xiaosan 填表日期：\quad 年 \quad 月 \quad 日
+\end{center}
+%%============================================================
+% empty page for two-page print
+\ifthenelse{\equal{\zjuside}{T}}{%
+  \newpage\mbox{}%
+  \thispagestyle{empty}}{}
+\thispagestyle{empty}
+{
+\begin{tabbing}
+              \= \songti\sihao 一、项目概况
+              \\[2mm]
+\end{tabbing}
+\begin{tabbing}
+              \= \songti\sihao 二、工作成果及水平
+              \\[2mm]
+\end{tabbing}
+\begin{tabbing}
+              \= \songti\sihao 三、项目收获
+              \\[2mm]
+\end{tabbing}
+\begin{tabbing}
+              \= \songti\sihao 四、对工作建议
+              \\[2mm]
+\end{tabbing}
+\begin{tabbing}
+              \= \songti\sihao 五、其他
+              \\[2mm]
+\end{tabbing}
+}

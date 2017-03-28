@@ -1,0 +1,43 @@
+%%============================================================
+%% 中文封面
+
+\thispagestyle{empty}
+
+\vspace{5mm}
+
+\begin{center}
+  \includegraphics[width=108mm]{images/zjdx}
+\end{center}
+
+\vspace{10mm}
+
+{
+\heiti\erhao\bfseries
+\centerline{本~~科~~生~~毕~~业~~设~~计}
+\centerline{开题报告}
+\vspace{18mm}
+}
+
+\begin{center}
+  \includegraphics[width=32mm]{images/standxb}
+\end{center}
+
+\vspace{15mm}
+
+{
+\songti\sanhao\bfseries
+\begin{tabbing}
+  \hspace{20mm}
+  \= 学生姓名：\= \underline{\makebox[7cm]{\zjuauthornamec}} \\[2mm]
+  \> 学生学号： \> \underline{\makebox[7cm]{\zjuauthorid}} \\[2mm]
+  \> 指导教师： \> \underline{\makebox[7cm]{\zjumentorc}} \\[2mm]
+  \> 年级专业： \> \underline{\makebox[7cm]{\zjugrade\zjumajor}} \\[2mm]
+  \> 所在学院： \> \underline{\makebox[7cm]{\zjucollegec}} \\[2mm]
+\end{tabbing}
+}
+
+%%============================================================
+% empty page for two-page print
+\ifthenelse{\equal{\zjuside}{T}}{%
+  \newpage\mbox{}%
+  \thispagestyle{empty}}{}
