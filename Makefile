@@ -1,8 +1,5 @@
 main:
-	xelatex main
-	bibtex main
-	xelatex main
-	xelatex main
+	latexmk -xelatex main
 
 clean:
 	git clean -dfX
