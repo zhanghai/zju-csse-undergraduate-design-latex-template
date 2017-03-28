@@ -1,3 +1,4 @@
+/main.pdf
 *.aux
 *.bbl
 *.bcf
@@ -7,4 +8,3 @@
 *.out
 *.swp
 *.toc
-/main.pdf
