@@ -1,9 +1,8 @@
 main:
-	xelatex main.tex
-	bibtex data/kaitibaogao.aux
-	mv data/kaitibaogao.bbl main.bbl
-	xelatex main.tex
-	xelatex main.tex
+	xelatex main
+	bibtex main
+	xelatex main
+	xelatex main
 
 clean:
 	git clean -dfX

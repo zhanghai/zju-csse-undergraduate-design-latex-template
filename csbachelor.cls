@@ -80,8 +80,6 @@
 \RequirePackage{url}
 \urlstyle{tt}
 
-\bibliographystyle{plain}
-
 \RequirePackage{lscape}
 \RequirePackage{graphicx}
 
