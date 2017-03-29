@@ -105,8 +105,9 @@
 \RequirePackage{enumitem}
 \setlist{noitemsep}
 
-\RequirePackage{etoolbox}
-\patchcmd{\thebibliography}{\sloppy}{\itemsep 0em \parsep 0em \parskip 0em \sloppy}{}{}
+\let\oldthebibliography\thebibliography
+\let\endoldthebibliography\endthebibliography
+\renewenvironment{thebibliography}[1]{\begin{oldthebibliography}{#1}\setlength{\itemsep}{0em}\setlength{\parskip}{0em}}{\end{oldthebibliography}}
 
 \renewcommand{\baselinestretch}{1.5}
 \renewcommand{\arraystretch}{1}
