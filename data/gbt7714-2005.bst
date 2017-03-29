@@ -150,7 +150,8 @@ FUNCTION {cmd.bibmodifydate}	{ "\providecommand{\bibmodifydate}[1]{#1}" }
 FUNCTION {cmd.bibcitedate} 		{ "\providecommand{\bibcitedate}[1]{#1}" }
 FUNCTION {cmd.bibyear} 			{ "\providecommand{\bibyear}[1]{#1}" }
 FUNCTION {cmd.bibdate} 			{ "\providecommand{\bibdate}[1]{#1}" }
-FUNCTION {cmd.biburl} 			{ "\providecommand{\biburl}[1]{\newline\url{#1}}" }
+%FUNCTION {cmd.biburl} 			{ "\providecommand{\biburl}[1]{\newline\url{#1}}" }
+FUNCTION {cmd.biburl} 			{ "\providecommand{\biburl}[1]{\url{#1}}" }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
                                                   %
@@ -623,9 +624,11 @@ FUNCTION {format.names} {                         % String Entry::format_names(S
     remove.dots 'jrname :=                        %     jrname = remove_dots(tmp);
     namelist nameindex "{f}" format.name$         %     tmp = format_name(namelist, nameindex, "{f}");
     remove.dots                                   %     tmp = remove_dots(tmp);
-    "u" change.case$ 'firstname :=                %     firstname = change_case(tmp, "u");
+%    "u" change.case$ 'firstname :=                %     firstname = change_case(tmp, "u");
+    'firstname :=                                 %     firstname = tmp;
     namelist nameindex "{ll}" format.name$        %     tmp = format_name(namelist, nameindex, "{ll}");
-    "u" change.case$ 'lastname :=                 %     lastname = change_case(tmp, "u");
+%    "u" change.case$ 'lastname :=                 %     lastname = change_case(tmp, "u");
+    'lastname :=                                  %     lastname = tmp;
     jrname empty$ not {                           %     if (! empty(jrname)) {
       jrname * " " *                              %       result = result + jrname + " "
     } 'skip$ if$                                  %     }
@@ -848,7 +851,8 @@ FUNCTION {format.citedate} {                      % String Emtry::format_citedat
                                                   % // since if the URL contains special symbols such
                                                   % // as '%', the \biburl{} will be broken.
 FUNCTION {format.url} {                           % String Emtry::format_url(String url) {
-  "\url{" swap$ * "}" *                   %   return "\newline\url{" + url + "}";
+%  "\newline\url{" swap$ * "}" *                   %   return "\newline\url{" + url + "}";
+  "\url{" swap$ * "}" *                           %   return "\url{" + url + "}";
 }                                                 % }
                                                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
