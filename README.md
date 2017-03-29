@@ -1,6 +1,6 @@
 # ZJU CS/SE Undergraduate Design Proposal LaTeX Template
 
-> 浙江大学计算机科学与技术、软件工程专业本科毕业设计开题报告模板
+> 浙江大学计算机科学与技术、软件工程专业本科毕业设计开题报告 LaTeX 模板
 
 Updated to the new style requirements at 2017-03-28.
 
