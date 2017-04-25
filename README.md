@@ -1,6 +1,6 @@
-# ZJU CS/SE Undergraduate Design Proposal LaTeX Template
+# ZJU CS/SE Undergraduate Design LaTeX Template
 
-> 浙江大学计算机科学与技术、软件工程专业本科毕业设计开题报告 LaTeX 模板
+> 浙江大学计算机科学与技术、软件工程专业本科毕业设计 LaTeX 模板
 
 Updated to the new style requirements at 2017-03-28.
 
@@ -18,8 +18,8 @@ Execute `./install-fonts.sh`, which copies and installs fonts from a Windows par
 
 ## Build
 
-Execute `make`, which invokes `latexmk`.
+In one of the sub-directories, execute `make`, which invokes `latexmk`.
 
 ## Clean
 
-Execute `make clean`, which removes all files ignored by `git`.
+In one of the sub-directories, execute `make clean`, which removes all files ignored by `git`.
