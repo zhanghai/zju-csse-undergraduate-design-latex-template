@@ -1,42 +1,46 @@
-\thispagestyle{empty}
-
 {
-\setlength{\parindent}{0em}
-\renewcommand{\baselinestretch}{2}
+  \setlength{\parindent}{0em}
+  \linespread{1}
 
-\vspace*{6mm}
+  \vspace*{-2.3em}
 
-{
-\renewcommand{\baselinestretch}{1}
-\songti\erhao
-A Dissertation Submitted to Zhejiang \par
+  {
+    \songti\xiaoer
+    \centering
+    A Thesis Submitted to Zhejiang University \\
+    for the Degree of Bachelor of Engineering \par
+  }
 
-Uinversity for the Degree of Bachelor of \par
+  \vspace{3.6em}
 
-Engneering \par
-}
+  \begin{center}
+    \includegraphics[width=29.5mm]{data/cover-en/xiaobiao}
+  \end{center}
 
-\vspace{1.5em}
+  \vspace{3em}
 
-\begin{center}
-  \includegraphics[width=35mm]{data/cover/xiaobiao}
-\end{center}
+  {
+    \songti\xiaoer
+    \centering
+    TITLE \; \underline{\makebox[17em]{\zjutitlee}} \par
+  }
 
-\vspace{2em}
+  \vspace{1.1em}
 
-{
-\renewcommand{\baselinestretch}{2.5}
-\songti\erhao
-\centering
-\hspace*{-0.5em}TITLE: \; \underline{\makebox[16em]{\zjutitlee}}\hspace*{-0.5em} \\
-\vspace{2em}
-% TODO: Use table.
-\sihao
-Author: \; \underline{\makebox[22em]{\zjuauthornamee}} \\
-Student ID: \; \underline{\makebox[22em]{\zjuauthorid}} \\
-Mentor: \; \underline{\makebox[22em]{\zjumentore}} \\
-Major: \; \underline{\makebox[19em]{\zjumajore}} \\
-College: \; \underline{\makebox[20em]{\zjucollegee}} \\
-Submitted Date: \; \underline{\makebox[20em]{\zjudatee}} \par
-}
+  {
+    \linespread{2}
+    \begin{center}
+    \sanhao
+    \newlength{\majorlength}
+    \setlength{\majorlength}{16em}
+    \begin{tabular}{l l}
+      Author & \underline{\makebox[\majorlength]{\zjuauthornamee}} \\
+      Student ID & \underline{\makebox[\majorlength]{\zjuauthorid}} \\
+      Supervisor & \underline{\makebox[\majorlength]{\zjumentore}} \\
+      Major & \underline{\makebox[\majorlength]{\zjumajore}} \\
+      College & \hspace{-3em}\underline{\makebox[\majorlength + 3em]{\zjucollegee}} \\
+      Submitted Date & \underline{\makebox[\majorlength]{\zjudatee}} \\
+    \end{tabular} \par
+    \end{center}
+  }
 }

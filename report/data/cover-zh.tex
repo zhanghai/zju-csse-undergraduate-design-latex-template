@@ -1,42 +1,44 @@
-\thispagestyle{empty}
-
 {
-\setlength{\parindent}{0em}
-\renewcommand{\baselinestretch}{2}
+  \setlength{\parindent}{0em}
 
-\vspace*{12mm}
+  {
+    \linespread{1}
 
-\begin{center}
-  \includegraphics[width=108mm]{data/cover/xiaoming}
-\end{center}
+    \vspace*{-1em}
 
-\vspace{-14mm}
+    \begin{center}
+      \includegraphics[width=108mm]{data/cover-zh/xiaoming}
+    \end{center}
 
-{
-\renewcommand{\baselinestretch}{1.8}
-\songti\erhao\bfseries
-\centering
-本~~科~~生~~毕~~业~~设~~计~~报~~告 \par
-}
+    \vspace{-1.5em}
 
-\vspace{1.5em}
+    {
+      \songti\erhao\bfseries
+      \centering
+      本~~科~~生~~毕~~业~~设~~计 \par
+    }
 
-\begin{center}
-  \includegraphics[width=35mm]{data/cover/xiaobiao}
-\end{center}
+    \vspace{1em}
 
-\vspace{4em}
+    \begin{center}
+      \includegraphics[width=35mm]{data/cover-zh/xiaobiao}
+    \end{center}
+  }
 
-{
-\renewcommand{\baselinestretch}{2.2}
-\songti\xiaosan
-\centering
-项目名称 \; \underline{\makebox[22em]{\zjutitlec}} \par
-\sihao
-姓\hspace{2em}名 \; \underline{\makebox[16em]{\zjuauthornamec}} \\
-学\hspace{2em}号 \; \underline{\makebox[16em]{\zjuauthorid}} \\
-指导教师 \; \underline{\makebox[16em]{\zjumentorc}} \\
-专\hspace{2em}业 \; \underline{\makebox[16em]{\zjumajorc}} \\
-学\hspace{2em}院 \; \underline{\makebox[16em]{\zjucollegec}} \par
-}
+  \vspace{9em}
+
+  {
+    \linespread{1.6}
+    \songti\sanhao\bfseries
+    \centering
+    \newlength{\titlelength}
+    \setlength{\titlelength}{22em}
+    题目 \; \underline{\makebox[\titlelength]{\zjutitlec}} \\
+    姓名 \; \underline{\makebox[\titlelength]{\zjuauthornamec}} \\
+    学号 \; \underline{\makebox[\titlelength]{\zjuauthorid}} \\
+    指导教师 \; \underline{\makebox[\titlelength - 2em]{\zjumentorc}} \\
+    年级与专业 \; \underline{\makebox[\titlelength - 3em]{\zjugrade \; \zjumajorc}} \\
+    学院 \; \underline{\makebox[\titlelength]{\zjucollegec}} \\
+    提交日期 \; \underline{\makebox[\titlelength - 2em]{\zjudatec}} \par
+  }
 }

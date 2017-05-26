@@ -8,8 +8,8 @@
 
 % 张海：其他引用
 \usepackage[hidelinks]{hyperref}
-\usepackage{longtable}
-\usepackage{multirow}
+\setlength{\LTpre}{1em}
+\setlength{\LTpost}{1em}
 
 \usepackage{tikz}
 \usetikzlibrary{arrows,backgrounds,fit,shapes}
@@ -40,19 +40,18 @@
   \zjuinfo{2013级}{计算机科学与技术}{Computer Science and Technology}
   % 学院信息：{学院中文}{学院英文}
   \zjucollege{计算机科学与技术学院}{College of Computer Science and Technology}
-  % 日期：{Submitted Date}
-  \zjudate{2017-05-30}
+  % 日期：{提交日期}{Submitted Date}
+  \zjudate{2017 年 6 月 5 日}{June 5, 2017}
 
 %==============================================================
 
   {
-
     \pagestyle{empty}
 
     \include{data/cover-zh}
     \include{data/cover-en}
 
-    \include{data/integrity}
+    \include{data/agreement}
     \cleardoublepage
   }
 
@@ -97,6 +96,11 @@
 
   {
     \backmatter
+
+    \pagestyle{empty}
+
+    \include{data/assignment}
+    \include{data/assessment}
   }
 
 \end{document}
