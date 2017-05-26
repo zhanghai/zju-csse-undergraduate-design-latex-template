@@ -2,7 +2,7 @@
 
 > 浙江大学计算机科学与技术、软件工程专业本科毕业设计 LaTeX 模板
 
-Updated to the new style requirements at 2017-03-28.
+Updated to the new style requirements in 2017.
 
 ## Dependencies
 
