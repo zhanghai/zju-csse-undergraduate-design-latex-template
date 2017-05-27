@@ -168,10 +168,13 @@
 %\setCJKfamilyfont{YouYuan}{YouYuan}
 %\setCJKfamilyfont{STFangsong}{FZFangSong-Z02}
 %\setCJKfamilyfont{STXingkai}{FZXingKai-S04}
+\newfontfamily{\times}{Times New Roman}
+\newfontfamily{\arial}{Arial}
+\newfontfamily{\courier}{Courier New}
 \DeclareRobustCommand{\fangsong}{\CJKfamily{FangSong}}
 \DeclareRobustCommand{\stfangsong}{\CJKfamily{STFangsong}}
 \DeclareRobustCommand{\stxingkai}{\CJKfamily{STXingkai}}
-\DeclareRobustCommand{\heiti}{\CJKfamily{HeiTi}}
+\DeclareRobustCommand{\heiti}{\arial\CJKfamily{HeiTi}}
 \DeclareRobustCommand{\kaiti}{\CJKfamily{KaiShu}}
 \DeclareRobustCommand{\lishu}{\CJKfamily{LiShu}}
 \DeclareRobustCommand{\songti}{\CJKfamily{SongTi}}
