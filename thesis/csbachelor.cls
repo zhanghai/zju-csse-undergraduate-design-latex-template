@@ -178,7 +178,7 @@
 \DeclareRobustCommand{\kaiti}{\CJKfamily{KaiShu}}
 \DeclareRobustCommand{\lishu}{\CJKfamily{LiShu}}
 \DeclareRobustCommand{\songti}{\CJKfamily{SongTi}}
-\DeclareRobustCommand{\youti}{\CJKfamily{YouYuan}}
+\DeclareRobustCommand{\youyuan}{\arial\CJKfamily{YouYuan}}
 \setcounter{secnumdepth}{4}
 
 % 张海
