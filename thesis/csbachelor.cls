@@ -168,9 +168,9 @@
 %\setCJKfamilyfont{YouYuan}{YouYuan}
 %\setCJKfamilyfont{STFangsong}{FZFangSong-Z02}
 %\setCJKfamilyfont{STXingkai}{FZXingKai-S04}
-\newfontfamily{\times}{Times New Roman}
+\newfontfamily{\timesnewroman}{Times New Roman}
 \newfontfamily{\arial}{Arial}
-\newfontfamily{\courier}{Courier New}
+\newfontfamily{\couriernew}{Courier New}
 \DeclareRobustCommand{\fangsong}{\CJKfamily{FangSong}}
 \DeclareRobustCommand{\stfangsong}{\CJKfamily{STFangsong}}
 \DeclareRobustCommand{\stxingkai}{\CJKfamily{STXingkai}}
