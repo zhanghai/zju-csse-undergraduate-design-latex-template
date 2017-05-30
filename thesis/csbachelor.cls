@@ -260,6 +260,11 @@
 \newtheorem{zjutheorem}{定理~}[chapter]
 \newtheorem{zjuproposition}{命题~}[chapter]
 \newenvironment{zjuproof}{\begin{proof}[\textnormal{\lishu 证明~}]}{\end{proof}}
+
+% HACK
+\let\oldcite=\cite
+\renewcommand{\cite}[1]{\textsuperscript{\oldcite{#1}}}
+
 \newcolumntype{.}{D{.}{.}{2.4}}
 \AtBeginDocument{%
    \makeatletter
